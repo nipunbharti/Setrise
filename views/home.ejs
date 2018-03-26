@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="header">
+	SetRise
+</div>
+
+<form action="/cityname" method="POST" class="form">
+	<input type="text" name="city" placeholder="Name of city" class="input"><br>
+	<button>Submit</button>
+</form>
+
+<div class="sunrise">
+	Sunrise: <%= sunriseTime %>
+</div>
+
+<div class="sunset">
+	Sunset: <%= sunsetTime %>
+</div>
+
+<% include partials/footer %>
